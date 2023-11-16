@@ -1,0 +1,49 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>second hand goods</title>
+<center><h1 style="color:red">SECOND HAND GOODS</h1></center>
+</head>
+<body>
+<body style="background-color:pink;">
+<?php
+if($_SERVER['REQUEST_METHOD']=='POST')
+{
+$servername="localhost";
+$username="root";
+$password="";
+$database="secondhandgood";
+
+$user=$_POST['user'];
+$pass=$_POST['pass'];
+$address=$_POST['add'];
+$it=$_POST['it'];
+$con= mysqli_connect($servername,$username,$password,$database);
+
+$sql="INSERT INTO `login`(`username`,`password`,`address`,`item`) VALUES('$user','$pass','$add',$it')";
+$result= mysqli_query($con,$sql);
+if($result)
+{
+echo "there";
+}
+else
+{
+echo "not there";
+}
+}
+?>
+<form action="/IP/login.php" method="POST">
+<p align=center>
+user name:<input type="text" id="user"name="user"><br><br>
+&nbsp
+address:<input type="address"id="add"name="pass"><br><br>
+&nbsp&nbsp
+item number:<input type="phone"id="it"name="pass"><br><br>
+
+<a 
+
+<input type="submit" value="submit"/>
+<input type="reset"value="clear all"/>
+</p>
+</form>
+</html>
