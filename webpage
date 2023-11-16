@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<h1>SECOND HAND GOODS</h1>
+<style>
+	h1{
+		color:red;
+		text-align: center;
+	}
+.column
+{
+flex:30%;
+padding:8px;
+}
+marquee{
+	width:400px;
+}
+img 
+{
+  width: 30%;
+}
+.container
+{
+display:flex;
+}
+img{
+	width:300px;
+	height:300px;
+}
+</style>
+</head>
+<body style="background-color:lightblue;">
+	<div class="container">
+	   <div class="column">
+	     <img src="C://xampp//htdocs//IP//lap.png" alt="image1"><a href="lap.html"><br>rs.50000<br>click here for more details</a>
+	   </div>
+<marquee>
+ <div class="column">
+	     <img src="C:\xampp\htdocs\chair.jpg" alt="image1"><br>rs.10000
+	   </div>
+	   <div class="column">
+	     <img src="C:\xampp\htdocs\IP\product-jpeg-500x500.webp" alt="image1"><br>rs.3.lakhs
+	   </div>
+	   <div class="column">
+	     <img src="C:\xampp\htdocs\IP\download.jpg" alt="image1"><br>rs.30000
+	   </div>
+	</div>
+<div class="column">
+	     <img src="C:\xampp\htdocs\bike.jpg" alt="image1"><br>rs.10000
+	   </div>
+</marquee>
+</body>
+</html>
